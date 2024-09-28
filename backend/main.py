@@ -1,9 +1,8 @@
-# app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from auth.routes import router as auth_router
 from fruits import router as fruits_router
-# from vegetables import router as vegetables_router
+from vegetables import router as vegetables_router
 from config import load_config
 
 app = FastAPI()
@@ -21,7 +20,7 @@ app.add_middleware(
 # Include routers
 app.include_router(auth_router, prefix="/auth", tags=["auth"])
 app.include_router(fruits_router, prefix="/fruits", tags=["fruits"])
-# app.include_router(vegetables_router, prefix="/vegetables", tags=["vegetables"])
+app.include_router(vegetables_router, prefix="/vegetables", tags=["vegetables"])
 
 @app.get("/")
 async def root():

@@ -7,9 +7,9 @@ from config import MODEL_PATH
 
 router = APIRouter()
 
-MODEL = tf.keras.models.load_model(f"{MODEL_PATH}/fruits/apple_model.keras", compile=False)
+MODEL = tf.keras.models.load_model(f"{MODEL_PATH}/vegetables/tomato_model.keras", compile=False)
 
-CLASS_NAMES = ['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy']
+CLASS_NAMES = ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites_Two_spotted_spider_mite', 'Target_Spot', 'YellowLeaf__Curl_Virus', 'Tomato_mosaic_virus', 'healthy']
 
 
 def read_file_as_image(data) -> np.ndarray:
