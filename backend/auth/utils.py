@@ -1,4 +1,3 @@
-# app/auth/utils.py
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from jose import jwt
 from datetime import datetime, timedelta
