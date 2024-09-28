@@ -1,9 +1,8 @@
-# app/auth/routes.py
 from fastapi import APIRouter, HTTPException
-from app.auth.models import UserSignup, UserLogin, UserResponse
-from app.auth.utils import create_verification_token, send_verification_email, verify_password
+from auth.models import UserSignup, UserLogin, UserResponse
+from auth.utils import create_verification_token, send_verification_email, verify_password
 from motor.motor_asyncio import AsyncIOMotorClient # type: ignore
-from app.config import MONGO_DETAILS, SECRET_KEY
+from config import MONGO_DETAILS, SECRET_KEY
 from jose import JWTError, jwt # type: ignore
 
 router = APIRouter()

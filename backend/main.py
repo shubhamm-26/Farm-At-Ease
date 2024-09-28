@@ -1,7 +1,7 @@
 # app/main.py
 from fastapi import FastAPI
-from app.auth.routes import router as auth_router
-from app.config import load_config
+from auth.routes import router as auth_router
+from config import load_config
 
 app = FastAPI()
 load_config()

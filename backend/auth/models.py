@@ -1,4 +1,3 @@
-# app/auth/models.py
 from pydantic import BaseModel, EmailStr
 
 class UserSignup(BaseModel):

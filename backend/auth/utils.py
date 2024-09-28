@@ -4,7 +4,7 @@ from jose import jwt
 from datetime import datetime, timedelta
 from typing import Optional
 from passlib.context import CryptContext
-from app.config import MAIL_USERNAME, MAIL_PASSWORD, MAIL_FROM, SECRET_KEY
+from config import MAIL_USERNAME, MAIL_PASSWORD, MAIL_FROM, SECRET_KEY
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
