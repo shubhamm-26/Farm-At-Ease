@@ -40,26 +40,36 @@ const SignupForm = () => {
 
         setIsSubmitting(true);
         try {
-            const response = await axios.post(`${apiUrl}/auth/signup`, {
-                email,
-                username,
-                password
+            const response = await fetch(`${apiUrl}/auth/signup`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email,
+                    username,
+                    password,
+                }),
             });
-            const { data } = response;
-            console.log(data);
+
+            if (!response.ok) {
+                throw new Error('Signup failed');
+            }
+
+            const data = await response.json();
             localStorage.setItem('token', data.token);
             localStorage.setItem('user', JSON.stringify(data.user));
             toast.success('Signup successful');
             router.push('/');
         } catch (error) {
-            toast.error('Signup failed');
+            toast.error(error.message || 'Signup failed');
         } finally {
             setIsSubmitting(false);
         }
     };
 
     return (
-        <div className="w-full h-3/4 bg-white shadow-lg rounded-lg p-8 px-24 flex flex-col justify-around">
+        <div className="w-full bg-white shadow-lg rounded-lg p-8 px-24 flex flex-col justify-around">
             <h2 className="text-4xl text-primary  font-bold text-center mb-6">Signup</h2>
             <div className="mb-4">
                 <label className="block text-primary font-medium mb-2" htmlFor="email">
