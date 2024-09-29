@@ -1,8 +1,8 @@
-from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
-from jose import jwt
+from fastapi_mail import FastMail, MessageSchema, ConnectionConfig # type: ignore
+from jose import jwt # type: ignore
 from datetime import datetime, timedelta
 from typing import Optional
-from passlib.context import CryptContext
+from passlib.context import CryptContext # type: ignore
 from config import MAIL_USERNAME, MAIL_PASSWORD, MAIL_FROM, SECRET_KEY
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
