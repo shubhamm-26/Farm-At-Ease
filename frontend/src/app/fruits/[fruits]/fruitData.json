@@ -1,0 +1,121 @@
+{
+    "peach": {
+      "diseases": {
+        "Bacterial Spot": {
+          "description": "Caused by Xanthomonas arboricola pv. pruni.",
+          "preventive_measures": [
+            "Plant resistant varieties",
+            "Prune to improve air circulation",
+            "Apply copper-based sprays during dormancy",
+            "Avoid overhead irrigation",
+            "Remove and destroy infected leaves and fruit",
+            "Apply appropriate bactericides during growing season"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Prune regularly for good air circulation",
+        "Practice proper sanitation (remove fallen leaves and fruit)",
+        "Monitor trees regularly for early signs of disease",
+        "Use disease-resistant varieties when available",
+        "Time irrigation to minimize leaf wetness",
+        "Apply appropriate fungicides and bactericides based on local recommendations",
+        "Manage insect pests to prevent secondary infections",
+        "Thin fruit to reduce humidity between fruits",
+        "Avoid injury to fruit during cultivation and harvesting"
+      ]
+    },
+    "grapes": {
+      "diseases": {
+        "Black Rot": {
+          "description": "Caused by the fungus Guignardia bidwellii.",
+          "preventive_measures": [
+            "Remove mummified fruit and cankers",
+            "Prune to improve air circulation",
+            "Apply fungicides preventively",
+            "Practice good sanitation",
+            "Use resistant varieties when possible"
+          ]
+        },
+        "Esca (Black Measles)": {
+          "description": "Caused by a complex of fungi including Phaeomoniella chlamydospora and Phaeoacremonium aleophilum.",
+          "preventive_measures": [
+            "Use disease-free planting material",
+            "Avoid pruning wounds during wet weather",
+            "Remove and destroy infected vines",
+            "Apply wound protectants after pruning",
+            "Maintain vine vigor through proper nutrition"
+          ]
+        },
+        "Leaf Blight (Isariopsis Leaf Spot)": {
+          "description": "Caused by the fungus Pseudocercospora vitis.",
+          "preventive_measures": [
+            "Improve air circulation through proper pruning",
+            "Remove infected leaves and fruit",
+            "Apply fungicides preventively",
+            "Practice good sanitation",
+            "Avoid overhead irrigation"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Prune for good air circulation and sunlight penetration",
+        "Practice proper sanitation (remove fallen leaves and fruit)",
+        "Monitor vines regularly for early signs of disease",
+        "Use disease-resistant varieties when available",
+        "Time irrigation to minimize leaf wetness",
+        "Apply appropriate fungicides based on local recommendations",
+        "Manage canopy to reduce humidity and increase air flow"
+      ]
+    },
+    "apple": {
+      "diseases": {
+        "Apple Scab": {
+          "description": "Caused by the fungus Venturia inaequalis.",
+          "preventive_measures": [
+            "Plant resistant varieties",
+            "Prune trees for better air circulation",
+            "Remove fallen leaves and fruit",
+            "Apply fungicides preventively",
+            "Time irrigation to reduce leaf wetness periods"
+          ]
+        },
+        "Black Rot": {
+          "description": "Caused by the fungus Botryosphaeria obtusa.",
+          "preventive_measures": [
+            "Prune out dead or diseased wood",
+            "Remove mummified fruit",
+            "Maintain tree vigor through proper fertilization",
+            "Apply fungicides during the growing season",
+            "Control insects that can create entry wounds"
+          ]
+        },
+        "Cedar Apple Rust": {
+          "description": "Caused by the fungus Gymnosporangium juniperi-virginianae.",
+          "preventive_measures": [
+            "Plant resistant varieties",
+            "Remove nearby red cedar trees (alternate host)",
+            "Apply fungicides in spring",
+            "Prune trees for better air circulation",
+            "Remove infected leaves and fruit"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Prune regularly for good air circulation",
+        "Practice proper sanitation (remove fallen leaves and fruit)",
+        "Monitor trees regularly for early signs of disease",
+        "Use disease-resistant varieties when available",
+        "Time irrigation to minimize leaf wetness",
+        "Apply appropriate fungicides based on local recommendations",
+        "Manage insect pests to prevent secondary infections"
+      ]
+    }
+  }
+  

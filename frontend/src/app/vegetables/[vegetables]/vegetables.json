@@ -1,0 +1,135 @@
+{
+    "corn": {
+      "diseases": {
+        "Cercospora Leaf Spot": {
+          "description": "Caused by the fungus Cercospora zeae-maydis.",
+          "preventive_measures": [
+            "Plant resistant hybrids",
+            "Practice crop rotation",
+            "Remove crop residue",
+            "Apply fungicides when necessary",
+            "Plant early to avoid peak infection periods"
+          ]
+        },
+        "Common Rust": {
+          "description": "Caused by the fungus Puccinia sorghi.",
+          "preventive_measures": [
+            "Plant resistant hybrids",
+            "Scout fields regularly",
+            "Apply fungicides when necessary",
+            "Plant early to avoid peak infection periods"
+          ]
+        },
+        "Northern Leaf Blight": {
+          "description": "Caused by the fungus Exserohilum turcicum.",
+          "preventive_measures": [
+            "Plant resistant hybrids",
+            "Practice crop rotation",
+            "Remove crop residue",
+            "Apply fungicides when necessary",
+            "Improve air circulation by proper plant spacing"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Practice crop rotation",
+        "Monitor plants regularly for early signs of disease",
+        "Maintain proper spacing for good air circulation",
+        "Use disease-resistant varieties when available",
+        "Control weeds that may harbor pathogens",
+        "Time planting to avoid environmental conditions favorable to diseases",
+        "Properly dispose of crop residues"
+      ]
+    },
+    "pepper": {
+      "diseases": {
+        "Bacterial Spot": {
+          "description": "Caused by Xanthomonas species.",
+          "preventive_measures": [
+            "Use disease-free seeds and transplants",
+            "Practice crop rotation",
+            "Avoid overhead irrigation",
+            "Remove and destroy infected plants",
+            "Apply copper-based bactericides",
+            "Improve air circulation",
+            "Avoid working with plants when they're wet"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Water plants at the base to keep foliage dry",
+        "Practice crop rotation",
+        "Monitor plants regularly for early signs of disease",
+        "Maintain proper spacing for good air circulation",
+        "Use disease-resistant varieties when available",
+        "Control weeds that may harbor pathogens",
+        "Sanitize garden tools regularly"
+      ]
+    },
+    "tomato": {
+      "diseases": {
+        "Bacterial Spot": {
+          "description": "Caused by Xanthomonas species of bacteria.",
+          "preventive_measures": [
+            "Use disease-free seeds and transplants",
+            "Practice crop rotation",
+            "Avoid overhead irrigation",
+            "Remove and destroy infected plants",
+            "Apply copper-based bactericides"
+          ]
+        },
+        "Early Blight": {
+          "description": "Caused by the fungus Alternaria solani.",
+          "preventive_measures": [
+            "Practice crop rotation",
+            "Remove and destroy infected plant debris",
+            "Improve air circulation by proper spacing",
+            "Water at the base of plants",
+            "Apply fungicides preventively"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Water plants at the base to keep foliage dry",
+        "Practice crop rotation",
+        "Monitor plants regularly for early signs of disease",
+        "Maintain proper spacing for good air circulation",
+        "Use disease-resistant varieties when available"
+      ]
+    },
+    "potato": {
+      "diseases": {
+        "Early Blight": {
+          "description": "Caused by the fungus Alternaria solani, it can affect leaves, stems, and tubers.",
+          "preventive_measures": [
+            "Use disease-free seed potatoes",
+            "Practice crop rotation",
+            "Maintain proper plant spacing for good air circulation",
+            "Apply fungicides as a preventive measure"
+          ]
+        },
+        "Late Blight": {
+          "description": "Caused by the oomycete Phytophthora infestans and can rapidly destroy entire fields.",
+          "preventive_measures": [
+            "Plant resistant varieties when available",
+            "Destroy all cull piles and volunteer potato plants",
+            "Apply fungicides before disease symptoms appear",
+            "Monitor fields regularly for signs of infection"
+          ]
+        }
+      },
+      "best_practices": [
+        "Ensure proper soil drainage",
+        "Maintain balanced soil fertility",
+        "Water plants at the base to keep foliage dry",
+        "Practice good sanitation in the field"
+      ]
+    }
+  }
+  
