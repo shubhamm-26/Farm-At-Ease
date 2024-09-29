@@ -96,10 +96,10 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center space-x-2">
-          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-sm"
+          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
             href="/auth/login"
           >Login</Link>
-          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-sm"
+          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
             href="/auth/signup" 
           >Sign Up</Link>
         </div>

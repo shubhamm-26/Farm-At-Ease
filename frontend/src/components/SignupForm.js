@@ -59,8 +59,8 @@ const SignupForm = () => {
     };
 
     return (
-        <div className="w-full h-3/4 bg-secondary p-8 rounded shadow-lg px-24 flex flex-col justify-around">
-            <h2 className="text-4xl font-bold text-center mb-6">Signup</h2>
+        <div className="w-full h-3/4 bg-white shadow-lg rounded-lg p-8 px-24 flex flex-col justify-around">
+            <h2 className="text-4xl text-primary  font-bold text-center mb-6">Signup</h2>
             <div className="mb-4">
                 <label className="block text-primary font-medium mb-2" htmlFor="email">
                     Email
@@ -76,7 +76,7 @@ const SignupForm = () => {
                 />
             </div>
             <div className="mb-4">
-                <label className="block text-gray-700 font-medium mb-2" htmlFor="username">
+                <label className="block text-primary font-medium mb-2" htmlFor="username">
                     Username
                 </label>
                 <input
@@ -90,7 +90,7 @@ const SignupForm = () => {
                 />
             </div>
             <div className="mb-4">
-                <label className="block text-gray-700 font-medium mb-2" htmlFor="password">
+                <label className="block text-primary  font-medium mb-2" htmlFor="password">
                     Password
                 </label>
                 <input
@@ -104,7 +104,7 @@ const SignupForm = () => {
                 />
             </div>
             <div className="mb-6">
-                <label className="block text-gray-700 font-medium mb-2" htmlFor="confirmPassword">
+                <label className="block text-primary  font-medium mb-2" htmlFor="confirmPassword">
                     Confirm Password
                 </label>
                 <input

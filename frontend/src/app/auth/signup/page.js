@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <div className='flex justify-around h-screen pt-16'>
 <div className='w-[50%] flex flex-col justify-center items-start px-10'>
-        <h1 className='text-5xl font-bold mb-16'>Welcome to Farm at Ease</h1>
+        <h1 className='text-5xl font-bold mb-16 text-primary '>Welcome to Farm at Ease</h1>
         <p className='text-lg mb-6'>
           Our machine learning model helps you predict diseases in fruits and vegetables simply by uploading an image.
           With just a click, you can enhance the health of your produce and ensure quality for your customers.
