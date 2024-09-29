@@ -10,7 +10,7 @@ export default function Home() {
       {/* Header Section */}
       <section className="text-center py-10 flex flex-col items-center mb-20">
         <Image src={Logo} alt="Farm At Ease" width={150} height={150} />
-        <h1 className="text-7xl font-bold text-green-800 mt-20">Welcome Farm At Ease</h1>
+        <h1 className="text-7xl font-bold text-green-800 mt-20">Welcome to Farm At Ease</h1>
         <p className="mt-4 text-lg text-gray-700 max-w-xl mx-auto">
           Use our machine learning model to identify diseases in your crops effortlessly! 
           Just upload an image of the leaf, and we'll help you understand what's wrong.

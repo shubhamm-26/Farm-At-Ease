@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-2">
           <h5 className="font-bold underline">Contact Us</h5>
           <a href="mailto:support@farmerscare.com" className="hover:underline">Email: support@farmatease.com</a>
-          <a href="tel:+1234567890" className="hover:underline">Phone: +123 456 7890</a>
+          <a href="tel:+1234567890" className="hover:underline">Phone: +91 9730430652</a>
         </div>
 
         <div className="flex flex-col space-y-2">
