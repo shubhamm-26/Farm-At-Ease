@@ -30,8 +30,8 @@ const LoginForm = () => {
       });
       const { data } = response;
       console.log(data);
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('user', JSON.stringify(data.user));
+      localStorage.setItem('token', data.access_token);
+      localStorage.setItem('user', JSON.stringify(data.username));
       toast.success('Login successful');
       router.push('/');
     } catch (error) {

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Logo from '../assets/logo.svg'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,6 +12,7 @@ import Corn from '../assets/Corn.jpg';
 import Pepper from '../assets/Pepper.jpg';
 import Tomato from '../assets/Tomato.jpg';
 import Potato from '../assets/Potato.jpg';
+import { useRouter } from 'next/navigation';
 
 
 const fruits = [
@@ -57,8 +58,20 @@ const vegetables = [
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const router = useRouter();
+  const[logedIn,setLogedIn] = useState(false);
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setLogedIn(true);
+    }
+  }, []);
 
-
+  const Logout = () => {
+    localStorage.removeItem('token');
+    setLogedIn(false);
+    router.push('/');
+  };
 
   return (
     <nav 
@@ -95,14 +108,22 @@ const Navbar = () => {
           </Link>
         </div>
         
-        <div className="flex items-center space-x-2">
-          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
+        
+          {logedIn ? (
+            <div className="flex items-center space-x-2">
+              <button className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white" onClick={Logout}>Logout</button>
+            </div>
+          ) : (
+            <div className="flex items-center space-x-2">
+            <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
             href="/auth/login"
           >Login</Link>
           <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
             href="/auth/signup" 
           >Sign Up</Link>
-        </div>
+          </div>
+          )}
+        
       </div>
       
       {hoveredItem && (

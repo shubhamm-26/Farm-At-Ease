@@ -1,7 +1,16 @@
 "use client";
 import React from 'react';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const VegetableDiseaseDetectionPage = () => {
+  const router = useRouter();
+  useEffect(() => {
+  const token = localStorage.getItem('token');
+  if (!token) {
+    router.push('/auth/login');
+  }
+}, [router]);
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 font-sans pt-20">
 
