@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../assets/logo.svg'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,7 +13,6 @@ import Pepper from '../assets/Pepper.jpg';
 import Tomato from '../assets/Tomato.jpg';
 import Potato from '../assets/Potato.jpg';
 import { useRouter } from 'next/navigation';
-
 
 const fruits = [
     {
@@ -60,6 +59,7 @@ const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const router = useRouter();
   const[logedIn,setLogedIn] = useState(false);
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
@@ -75,15 +75,15 @@ const Navbar = () => {
 
   return (
     <nav 
-    className="absolute z-10 w-full" 
-    onMouseLeave={() => setHoveredItem(null)}
+      className="absolute z-10 w-full" 
+      onMouseLeave={() => setHoveredItem(null)}
     >
       <div className="flex items-center justify-between p-4 bg-primary text-white">
         <Link 
-        className="flex items-center space-x-2"
-        href="/"
+          className="flex items-center space-x-2"
+          href="/"
         >
-            <Image src={Logo} alt="Logo" width={30} height={30} />
+          <Image src={Logo} alt="Logo" width={30} height={30} />
           <span className="text-2xl font-bold">Farm At Ease</span>
         </Link>
         
@@ -93,7 +93,7 @@ const Navbar = () => {
             onMouseEnter={() => setHoveredItem('fruits')}
             href="/fruits"
           >
-            <button className={`flex items-center text-white hover:text-secondary `}>
+            <button className="flex items-center text-white hover:text-secondary">
               Fruits 
             </button>
           </Link>
@@ -106,24 +106,43 @@ const Navbar = () => {
               Vegetables
             </button>
           </Link>
+          {logedIn && (
+            <Link
+              className="relative"
+              href="/chat"
+            >
+              <button className="flex items-center text-white hover:text-secondary">
+                Chat Assistant
+              </button>
+            </Link>
+          )}
         </div>
         
-        
-          {logedIn ? (
-            <div className="flex items-center space-x-2">
-              <button className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white" onClick={Logout}>Logout</button>
-            </div>
-          ) : (
-            <div className="flex items-center space-x-2">
-            <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
-            href="/auth/login"
-          >Login</Link>
-          <Link className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
-            href="/auth/signup" 
-          >Sign Up</Link>
+        {logedIn ? (
+          <div className="flex items-center space-x-2">
+            <button 
+              className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white" 
+              onClick={Logout}
+            >
+              Logout
+            </button>
           </div>
-          )}
-        
+        ) : (
+          <div className="flex items-center space-x-2">
+            <Link 
+              className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
+              href="/auth/login"
+            >
+              Login
+            </Link>
+            <Link 
+              className="px-2 py-1 bg-white text-primary rounded-lg text-md hover:bg-secondary hover:text-white"
+              href="/auth/signup" 
+            >
+              Sign Up
+            </Link>
+          </div>
+        )}
       </div>
       
       {hoveredItem && (
@@ -131,8 +150,8 @@ const Navbar = () => {
           <div className="flex justify-center space-x-4">
             {(hoveredItem === 'fruits' ? fruits : vegetables).map((item) => (
               <Link 
-              key={item} 
-              className="px-3 py-1"
+                key={item.name} 
+                className="px-3 py-1"
                 href={`/${hoveredItem.toLowerCase()}/${item.name.toLowerCase()}`}
               >
                 <NavCard product={item} />

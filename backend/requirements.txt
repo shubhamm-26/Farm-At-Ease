@@ -11,3 +11,5 @@ tensorflow
 numpy
 pillow
 python-multipart
+passlib
+pymongo

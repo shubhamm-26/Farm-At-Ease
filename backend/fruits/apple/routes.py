@@ -11,7 +11,6 @@ MODEL = tf.keras.models.load_model(f"{MODEL_PATH}/fruits/apple_model.keras", com
 
 CLASS_NAMES = ['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy']
 
-
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
     return image
